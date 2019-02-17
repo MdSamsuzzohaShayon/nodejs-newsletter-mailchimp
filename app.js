@@ -69,6 +69,7 @@ app.post('/signup', (req, res) => {
 
 
     // DON'T NAME THE SECOND PARAMETERS RES BECAUSE RES IS PARAMETERS OF MAIN CALL BACK FUNCTION
+    
     request(options, (err, response, body) => {
         if (err) {
             res.redirect('/failed.html');
@@ -80,6 +81,7 @@ app.post('/signup', (req, res) => {
             }
         }
     });
+    //SEE RESULTS IN MAILCHIMP DASHBOARD
 
 });
 
