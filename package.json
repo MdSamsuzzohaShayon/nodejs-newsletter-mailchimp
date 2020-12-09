@@ -2,7 +2,7 @@
   "name": "newsletter-mailchimp",
   "version": "1.0.0",
   "description": "",
-  "main": "app.js",
+  "main": "index.js",
   "scripts": {
     "start": "node app",
     "dev": "nodemon app"
@@ -10,8 +10,9 @@
   "author": "Md Shayon",
   "license": "ISC",
   "dependencies": {
-    "body-parser": "^1.18.3",
-    "express": "^4.16.4",
+    "cors": "^2.8.5",
+    "ejs": "^3.1.5",
+    "express": "^4.17.1",
     "request": "^2.88.0"
   }
 }

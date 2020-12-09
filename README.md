@@ -1,3 +1,53 @@
+## [Tutorial](https://www.youtube.com/watch?v=JLKzr83xZGo)
+
+
+
+
+ - Create a account in mailchimp -> audiance -> manage audiance
+ - Get the [audiance id](https://us20.admin.mailchimp.com/lists/settings?id=20965) from there 
+ - [API first call or base endpoint](https://mailchimp.com/developer/guides/marketing-api-quick-start/#make-your-first-api-call)
+
+ - Get api key from -> [account](https://us20.admin.mailchimp.com/account/) -> extras
+
+ - [Send your first email](https://mailchimp.com/developer/guides/send-your-first-transactional-email/#send-your-first-email)
+
+ ```
+ const mailchimp = require("mailchimp_transactional")(
+  "YOUR_API_KEY"
+);
+
+const message = {
+  from_email: "hello@example.com",
+  subject: "Hello world",
+  text: "Welcome to Mailchimp Transactional!",
+  to: [
+    {
+      email: "freddie@example.com",
+      type: "to"
+    }
+  ]
+};
+
+async function run() {
+  const response = await mailchimp.messages.send({
+    message
+  });
+  console.log(response);
+}
+run();
+ ```
+
+ - [Marketing list api](https://mailchimp.com/developer/api/marketing/lists/)
+
+
+
+
+<hr />
+<hr />
+
+
+
+
 ## Static file
 
 In this project we will not use any template engine
@@ -62,6 +112,7 @@ find example below in the page
 ***marge fields and extra data***
 
  - list -> go to list setting -> settings drop down -> list fields and marge tag
+
 
 
 
