@@ -7,5 +7,7 @@ module.exports = {
     // LIST_AUDIANCE_API: "https://server.api.mailchimp.com/3.0/lists/"
 
     // https://mailchimp.com/developer/guides/marketing-api-conventions/
-    LIST_AUDIANCE_API: "https://us20.api.mailchimp.com/3.0/"
+    LIST_AUDIANCE_API: "https://us20.api.mailchimp.com/3.0/",
+    
+    // https://us19.admin.mailchimp.com/
     }
