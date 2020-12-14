@@ -1,0 +1,110 @@
+{
+    "members": [
+        {
+            "campaign_id": "98227cb61b",
+            "list_id": "905728b852",
+            "list_is_active": true,
+            "contact_status": "subscribed",
+            "email_id": "5eed4fd004e739c74eda0c7b6ce23ccb",
+            "email_address": "wmcares@wm.com",
+            "merge_fields": {
+                "FNAME": "Waste Management",
+                "LNAME": "David P. Steiner",
+                "ADDRESS": {
+                    "addr1": "",
+                    "addr2": "",
+                    "city": "",
+                    "state": "",
+                    "zip": "",
+                    "country": "US"
+                },
+                "PHONE": "713-512-6200",
+                "BIRTHDAY": "07/07"
+            },
+            "vip": false,
+            "opens_count": 2,
+            "opens": [
+                {
+                    "timestamp": "2020-12-07T15:22:13+00:00"
+                },
+                {
+                    "timestamp": "2020-12-07T15:22:12+00:00"
+                }
+            ],
+            "_links": [
+                {
+                    "rel": "parent",
+                    "href": "https://us20.api.mailchimp.com/3.0/reports/98227cb61b/open-details/",
+                    "method": "GET",
+                    "targetSchema": "https://us20.api.mailchimp.com/schema/3.0/Definitions/Campaigns/Response.json"
+                },
+                {
+                    "rel": "self",
+                    "href": "https://us20.api.mailchimp.com/3.0/reports/98227cb61b/open-details/5eed4fd004e739c74eda0c7b6ce23ccb",
+                    "method": "GET",
+                    "targetSchema": "https://us20.api.mailchimp.com/schema/3.0/Definitions/Reports/OpenDetails/Response.json"
+                }
+            ]
+        },
+        {
+            "campaign_id": "98227cb61b",
+            "list_id": "905728b852",
+            "list_is_active": true,
+            "contact_status": "subscribed",
+            "email_id": "019997b418d583bac36de2d4b2996f8b",
+            "email_address": "RadioShack.Customer.Care@RadioShack.com",
+            "merge_fields": {
+                "FNAME": "RadioShack",
+                "LNAME": "Julian C. Day",
+                "ADDRESS": {
+                    "addr1": "",
+                    "addr2": "",
+                    "city": "",
+                    "state": "",
+                    "zip": "",
+                    "country": "US"
+                },
+                "PHONE": "817-415-3011",
+                "BIRTHDAY": "06/07"
+            },
+            "vip": false,
+            "opens_count": 1,
+            "opens": [
+                {
+                    "timestamp": "2020-12-05T21:52:59+00:00"
+                }
+            ],
+            "_links": [
+                {
+                    "rel": "parent",
+                    "href": "https://us20.api.mailchimp.com/3.0/reports/98227cb61b/open-details/",
+                    "method": "GET",
+                    "targetSchema": "https://us20.api.mailchimp.com/schema/3.0/Definitions/Campaigns/Response.json"
+                },
+                {
+                    "rel": "self",
+                    "href": "https://us20.api.mailchimp.com/3.0/reports/98227cb61b/open-details/019997b418d583bac36de2d4b2996f8b",
+                    "method": "GET",
+                    "targetSchema": "https://us20.api.mailchimp.com/schema/3.0/Definitions/Reports/OpenDetails/Response.json"
+                }
+            ]
+        }
+    ],
+    "campaign_id": "98227cb61b",
+    "total_opens": 3,
+    "total_items": 2,
+    "_links": [
+        {
+            "rel": "parent",
+            "href": "https://us20.api.mailchimp.com/3.0/reports/98227cb61b/",
+            "method": "GET",
+            "targetSchema": "https://us20.api.mailchimp.com/schema/3.0/Definitions/Campaigns/Response.json"
+        },
+        {
+            "rel": "self",
+            "href": "https://us20.api.mailchimp.com/3.0/reports/98227cb61b/open-details",
+            "method": "GET",
+            "targetSchema": "https://us20.api.mailchimp.com/schema/3.0/Definitions/Reports/ClickDetails/CollectionResponse.json"
+        }
+    ]
+}
