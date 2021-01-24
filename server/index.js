@@ -19,6 +19,12 @@ const app = express();
 
 
 
+app.use(express.json());
+app.use(express.urlencoded({extended: false}));
+
+
+
+
 
 mailchimp.setConfig({
   apiKey: keys.API_KEY,
@@ -68,13 +74,13 @@ const saveMamber = async () => {
 
 
 
-// saveMamber();
+
 
 
 
 // GET AUDIANCE AND MEMBERS INFORMATIONS
 // run();
-app.get('/audiance', (req, res, next)=>{
+app.get('/audiance', async (req, res, next)=>{
   const response = await mailchimp.lists.getListMembersInfo("905728b852");
   res.status(200).json(response);
 });
@@ -83,7 +89,17 @@ app.get('/audiance', (req, res, next)=>{
 
 
 
-
+// SAVE MEMBER TO THE AUDIANCE
+// saveMamber();
+app.post('/audiance', async(req, res, next)=>{
+  const {email, status} = req.body;
+  console.log(email, status);
+  const response = await mailchimp.lists.addListMember("905728b852", {
+    email_address: email,
+    status: status,
+  });
+  res.status(200).json(response);
+});
 
 
 
