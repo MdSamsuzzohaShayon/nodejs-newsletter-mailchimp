@@ -36,3 +36,34 @@
     transform: rotate(360deg);
   }
 }
+
+
+
+
+.wrapper{
+  width: 80%;
+  margin-left: 10%;
+  background: #000033;
+  color: #6666ff;
+}
+
+
+.member, .audiance{
+  border-bottom: 1px solid #000080;
+}
+.member-header, .audiance-header{
+  padding: 20px 0;
+}
+
+ul{
+  padding: 0;
+  margin: 0;
+}
+.member-List{
+  padding: 10px 0;
+  background-color: #00004d;
+  margin-bottom: 4px 0;
+  /* text-decoration: none; */
+  color:#b3b3ff;
+  list-style: none;
+}
