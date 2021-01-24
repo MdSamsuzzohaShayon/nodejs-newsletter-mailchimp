@@ -40,4 +40,17 @@ async function run() {
 
 }
 
-run();
+
+
+// https://mailchimp.com/developer/marketing/api/list-members/add-member-to-list/
+const saveMamber = async () => {
+  const response = await mailchimp.lists.addListMember("905728b852", {
+    email_address: "Zane.Buckridge75@yahoo.com",
+    status: "subscribed",
+  });
+  console.log(response);
+};
+
+
+// run();
+saveMamber();
