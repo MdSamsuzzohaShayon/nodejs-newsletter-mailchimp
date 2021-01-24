@@ -1,15 +1,28 @@
 // https://mailchimp.com/developer/marketing/guides/quick-start/
-import mailchimp from "@mailchimp/mailchimp_marketing";
+const mailchimp = require('@mailchimp/mailchimp_marketing');
+const keys = require('./config/key.js');
 
-
+/*
+// FOR USING MODULE SYNTEX IN NODE PROJECT WE NEED TO SET TYPE MODULE IN PACKAGE.JSON FOLDER
+// import mailchimp from "@mailchimp/mailchimp_marketing";
 // package.json
-// {
-//   "type": "module"
-// }
+{
+  "type": "module"
+}
+*/
+
+
+
+const express = require('express');
+const app = express();
+
+
+
+
 
 mailchimp.setConfig({
-  apiKey: "1004185084ca3ba8b2c2ad3133f60a6c-us20",
-  server: "us20",
+  apiKey: keys.API_KEY,
+  server: keys.SERVER_PREFIX,
 });
 
 async function run() {
@@ -52,5 +65,28 @@ const saveMamber = async () => {
 };
 
 
+
+
+
+// saveMamber();
+
+
+
+// GET AUDIANCE AND MEMBERS INFORMATIONS
 // run();
-saveMamber();
+app.get('/audiance', (req, res, next)=>{
+  const response = await mailchimp.lists.getListMembersInfo("905728b852");
+  res.status(200).json(response);
+});
+
+
+
+
+
+
+
+
+
+
+
+app.listen(5000, ()=> console.log("server is eunning on port: 5000"));
